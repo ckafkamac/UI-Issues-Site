@@ -26,6 +26,7 @@ body {
 	min-height: 50%;
 	min-width: 50%;
 }
+
 img {
 	border: 0;
 }
@@ -149,7 +150,7 @@ li {
 	margin: 10px 40px;
 	overflow: hidden;
 	position: relative;
-	display:block;
+	display: inline-block;
 }
 
 ul#arrows {
@@ -166,8 +167,13 @@ ul#arrows li {
 .column {
 	display: inline-block;
 	width: 50%;
+	float: left;
 }
 
+.column:nth-child(2n+1) {
+	background-color: blue;
+	float: right;
+}
 /* --- CARROUSEL -- */
 
 #carrousel {
